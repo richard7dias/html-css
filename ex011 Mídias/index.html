@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamanho de imagens ajustadas</title>
+</head>
+
+<body>
+    <h1>Tamanho de imagens ajustadas</h1>
+    <p>Use a tag picture para inserir imagens que caibam no navegador desktop, no mobile e em uma smartv</p>
+    <p>Faça o teste aumentando e diminuindo o navegador, veja que as imagens mudarão</p>
+
+    <picture>
+        <source media="(max-width: 700px)" srcset="imagens/pequeno.jpg" type="image/jpg">
+        <source media="(max-width: 1000px)" srcset="imagens/medio.jpg" type="image/jpg">
+        <img src="imagens/grande.jpg" alt="Imagem flexível">
+        <!--A base, o img ali é a imagem principal, e acima coloco os sources necessários-->
+    </picture>
+
+    <h2>Reproduzindo músicas</h2>
+    <p>Já está tocando a música da pasta midia</p>
+    <audio src="midia/happy-music.mp3" controls autoplay></audio>
+    <!--Formatos aceitos pelo HTML: MP3, WAV, OGG-->
+
+    <h3>Abaixo, outro modelo de reprodução de áudio</h3>
+    <audio preload="metadata" controls loop>
+        <!--Para navegadores de usuários que nâo lêem formatods, basta usar este modelo, o primeiro vai tentar ler, se não, vai para o segundo e se não vai para o terceiro. Lembrando que preciso ter os 3 formatos na pasta-->
+        <source src="midia/happy-music.mp3" type="audio/mpeg">
+        <source src="midia/happy-music.wav" type="audio/wav">
+        <source src="midia/happy-music.ogg" type="audio/ogg">
+        <p>Infelizmente seu navegador não consegue reproduzir, baixe no link: <a href="midia/happy-music.mp3">baixe
+                aqui.</a></p>
+        <!--Veja que o navegador vai tentar ler todos os formatos em ordem, e se não ler nenhum, coloquei uma opção para o usuário baixar a música-->
+    </audio>
+
+    <h2>Vídeos</h2>
+    
+</body>
+
+</html>

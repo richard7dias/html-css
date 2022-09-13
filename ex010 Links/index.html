@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Links</title>
+</head>
+
+<body>
+        <h1>Links externos</h1>
+        <p>Acesse meu <a href="https://github.com/richard7dias" target="_blank" rel="external">repositório público no
+                        GuiHub</a> usando a tag âncora</p>
+        <!--Veja que o link ficou com config de _blank, que é uma janela em branco, e external para uma aba fora do meu site, para o usuário não perder acesso ao meu site-->
+        <p>Aqui já não tem as configs de cima para <a
+                        href="https://www.youtube.com/channel/UCqqO3cGl2YwePAo9qUZwkEQ">meu
+                        canal no YT</a></p>
+        <h2>Link interno</h2>
+        <p>Esta é a 1ª página do site, para criar uma nova página, basta <a href="pag002.html" rel="next">clicar aqui
+                        para
+                        conhecer a
+                        2ª página</a>.</p>
+        <!--Veja que eu coloquei rel como next e depois como prev, isso na prática não muda muito, mas é uma semântica que o google por exemplo entenderá-->
+        <p>Agora, se vai colocar um link que não sabemos se é oficial de algo, ou é umlink suspeito que pode ser meio
+                esquisito, <a href="https://www.reclameaqui.com.br/mission-brasil/link-estranho_DEMAAmj8ZxpLwiDt/"
+                        target="_blank" rel="nofollow">clique aqui.</a></p>
+        <!--De novo aqui é semântica-->
+        <p>Bora ara outra página dentro de <a href="noticias/pag003.html" target="_self" rel="next">uma pasta</a>.</p>
+        <h2>Links para download</h2>
+        <ul>
+                <li><a href="livro/exemplo.pdf" download="exemplo" type="aplication/pdf">Baixar livro em pdf</a></li>
+                <li>Para baixar livro em zip: <a href="livro/exemplo.pdf.zip" download="exemplo.zip"
+                                type="aplication/zip">clique aqui.</a></li>
+                <li>Para descobrir o type, use esse site: <a
+                                href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank"
+                                rel="external">iana.org</a></li>
+        </ul>
+</body>
+
+</html>
