@@ -15,7 +15,6 @@
 
 html,
 body {
-    min-width: 100vh;
     background-color: darkgray;
     font-family: var(--fonte-padrao);
 }
@@ -25,6 +24,7 @@ header {
     color: white;
     padding: 40px;
     text-align: center;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.109);
 }
 
 header h1 {
@@ -34,13 +34,18 @@ header h1 {
 }
 
 main {
-    padding: 30px;
+    margin: auto;
+    min-width: 280px;
+    max-width: 800px;
     font-family: var(--fonte-poesia);
     font-size: 2em;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.109);
 }
 
 section {
-    padding: 10vh 0vh 10vh 5vh;
+    min-width: 370px;
+    max-width: 1500px;
+    padding: 30px 30px;
     line-height: 1.5em;
 }
 
@@ -49,15 +54,36 @@ section.normal {
     color: black;
 }
 
+section.normal>p {
+    padding-bottom: 2em;
+}
+
 section.imagem {
     background-color: rgb(50, 50, 50);
     color: white;
+    box-shadow: inset 0px 0px 20px 5px rgba(0, 0, 0, 0.395);
+    background-position: left center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem>p {
     background-color: rgba(0, 0, 0, 0.39);
     width: 400px;
     display: inline-block;
+    text-shadow: 1px 1px 5px black;
+}
+
+section#img1 {
+    background-image: url(../imagens/background001.jpg);
+}
+
+section#img2 {
+    background-image: url(../imagens/background002.jpg);
+}
+
+section#simples {
+    padding-bottom: 0px;
 }
 
 a {
@@ -73,6 +99,5 @@ footer {
     background-color: black;
     color: white;
     padding: 5px;
-    margin: 20px 0px 20px 0px;
     text-align: center;
 }
