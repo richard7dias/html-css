@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +17,8 @@
             position: relative;
         }
 
-        td, th {
+        td,
+        th {
             border: 1px solid black;
             padding: 10px;
         }
@@ -28,22 +30,25 @@
             background-color: lightgray;
         }
 
-        thead, tfoot {
+        thead,
+        tfoot {
             background-color: #383838;
             color: white;
         }
 
-        thead > tr > th {
+        thead>tr>th {
             position: sticky;
             top: -1px;
             background-color: #383838;
         }
 
-        tbody > tr:nth-child(odd) { /* 2n-1 */
+        tbody>tr:nth-child(odd) {
+            /* 2n-1 */
             background-color: white;
         }
 
-        tbody > tr:nth-child(even) { /* 2n */
+        tbody>tr:nth-child(even) {
+            /* 2n */
             background-color: lightgray;
         }
 
@@ -52,6 +57,7 @@
         }
     </style>
 </head>
+
 <body>
     <h1>Uso de tabelas grandes</h1>
     <!--
@@ -66,19 +72,13 @@
                 TR, TD, TH
     -->
     <table>
-        <caption>População das Unidades Federativas</caption> 
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
                 <th scope="col">Estado</th>
                 <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
-        <tfoot>
-            <tr>
-                <th scope="row">Total de Habitantes</th>
-                <td class="num"><strong>210.147.125</strong></td>
-            </tr>
-        </tfoot>
         <tbody>
             <tr>
                 <td>São Paulo</td>
@@ -188,18 +188,73 @@
                 <td>Roraima</td>
                 <td class="num">605.761</td>
             </tr>
-        </tbody>      
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>210.147.125</strong></td>
+            </tr>
+        </tfoot>
     </table>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptas optio perspiciatis reprehenderit quod mollitia iste, soluta, illo, in deleniti eligendi consectetur provident voluptatem veritatis eum eius nulla ut omnis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eveniet amet voluptatem veniam voluptatum officia quisquam perspiciatis blanditiis, mollitia ratione qui nesciunt, sint deleniti, assumenda quasi quos vero doloribus! Fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, consectetur architecto omnis rem, ullam adipisci tenetur dolore perspiciatis officiis vitae voluptates atque laborum necessitatibus! Reiciendis aspernatur impedit reprehenderit dignissimos placeat? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda unde repellat dolorum eum voluptates ad illum recusandae, aperiam nihil et? Blanditiis, illo! In consectetur accusantium odit quos, repudiandae aut aspernatur?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptas optio perspiciatis reprehenderit quod
+        mollitia iste, soluta, illo, in deleniti eligendi consectetur provident voluptatem veritatis eum eius nulla ut
+        omnis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eveniet amet voluptatem veniam
+        voluptatum officia quisquam perspiciatis blanditiis, mollitia ratione qui nesciunt, sint deleniti, assumenda
+        quasi quos vero doloribus! Fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, consectetur
+        architecto omnis rem, ullam adipisci tenetur dolore perspiciatis officiis vitae voluptates atque laborum
+        necessitatibus! Reiciendis aspernatur impedit reprehenderit dignissimos placeat? Lorem ipsum dolor sit, amet
+        consectetur adipisicing elit. Assumenda unde repellat dolorum eum voluptates ad illum recusandae, aperiam nihil
+        et? Blanditiis, illo! In consectetur accusantium odit quos, repudiandae aut aspernatur?</p>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptas optio perspiciatis reprehenderit quod mollitia iste, soluta, illo, in deleniti eligendi consectetur provident voluptatem veritatis eum eius nulla ut omnis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eveniet amet voluptatem veniam voluptatum officia quisquam perspiciatis blanditiis, mollitia ratione qui nesciunt, sint deleniti, assumenda quasi quos vero doloribus! Fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, consectetur architecto omnis rem, ullam adipisci tenetur dolore perspiciatis officiis vitae voluptates atque laborum necessitatibus! Reiciendis aspernatur impedit reprehenderit dignissimos placeat? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda unde repellat dolorum eum voluptates ad illum recusandae, aperiam nihil et? Blanditiis, illo! In consectetur accusantium odit quos, repudiandae aut aspernatur?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptas optio perspiciatis reprehenderit quod
+        mollitia iste, soluta, illo, in deleniti eligendi consectetur provident voluptatem veritatis eum eius nulla ut
+        omnis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eveniet amet voluptatem veniam
+        voluptatum officia quisquam perspiciatis blanditiis, mollitia ratione qui nesciunt, sint deleniti, assumenda
+        quasi quos vero doloribus! Fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, consectetur
+        architecto omnis rem, ullam adipisci tenetur dolore perspiciatis officiis vitae voluptates atque laborum
+        necessitatibus! Reiciendis aspernatur impedit reprehenderit dignissimos placeat? Lorem ipsum dolor sit, amet
+        consectetur adipisicing elit. Assumenda unde repellat dolorum eum voluptates ad illum recusandae, aperiam nihil
+        et? Blanditiis, illo! In consectetur accusantium odit quos, repudiandae aut aspernatur?</p>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptas optio perspiciatis reprehenderit quod mollitia iste, soluta, illo, in deleniti eligendi consectetur provident voluptatem veritatis eum eius nulla ut omnis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eveniet amet voluptatem veniam voluptatum officia quisquam perspiciatis blanditiis, mollitia ratione qui nesciunt, sint deleniti, assumenda quasi quos vero doloribus! Fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, consectetur architecto omnis rem, ullam adipisci tenetur dolore perspiciatis officiis vitae voluptates atque laborum necessitatibus! Reiciendis aspernatur impedit reprehenderit dignissimos placeat? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda unde repellat dolorum eum voluptates ad illum recusandae, aperiam nihil et? Blanditiis, illo! In consectetur accusantium odit quos, repudiandae aut aspernatur?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptas optio perspiciatis reprehenderit quod
+        mollitia iste, soluta, illo, in deleniti eligendi consectetur provident voluptatem veritatis eum eius nulla ut
+        omnis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eveniet amet voluptatem veniam
+        voluptatum officia quisquam perspiciatis blanditiis, mollitia ratione qui nesciunt, sint deleniti, assumenda
+        quasi quos vero doloribus! Fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, consectetur
+        architecto omnis rem, ullam adipisci tenetur dolore perspiciatis officiis vitae voluptates atque laborum
+        necessitatibus! Reiciendis aspernatur impedit reprehenderit dignissimos placeat? Lorem ipsum dolor sit, amet
+        consectetur adipisicing elit. Assumenda unde repellat dolorum eum voluptates ad illum recusandae, aperiam nihil
+        et? Blanditiis, illo! In consectetur accusantium odit quos, repudiandae aut aspernatur?</p>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptas optio perspiciatis reprehenderit quod mollitia iste, soluta, illo, in deleniti eligendi consectetur provident voluptatem veritatis eum eius nulla ut omnis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eveniet amet voluptatem veniam voluptatum officia quisquam perspiciatis blanditiis, mollitia ratione qui nesciunt, sint deleniti, assumenda quasi quos vero doloribus! Fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, consectetur architecto omnis rem, ullam adipisci tenetur dolore perspiciatis officiis vitae voluptates atque laborum necessitatibus! Reiciendis aspernatur impedit reprehenderit dignissimos placeat? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda unde repellat dolorum eum voluptates ad illum recusandae, aperiam nihil et? Blanditiis, illo! In consectetur accusantium odit quos, repudiandae aut aspernatur?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptas optio perspiciatis reprehenderit quod
+        mollitia iste, soluta, illo, in deleniti eligendi consectetur provident voluptatem veritatis eum eius nulla ut
+        omnis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eveniet amet voluptatem veniam
+        voluptatum officia quisquam perspiciatis blanditiis, mollitia ratione qui nesciunt, sint deleniti, assumenda
+        quasi quos vero doloribus! Fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, consectetur
+        architecto omnis rem, ullam adipisci tenetur dolore perspiciatis officiis vitae voluptates atque laborum
+        necessitatibus! Reiciendis aspernatur impedit reprehenderit dignissimos placeat? Lorem ipsum dolor sit, amet
+        consectetur adipisicing elit. Assumenda unde repellat dolorum eum voluptates ad illum recusandae, aperiam nihil
+        et? Blanditiis, illo! In consectetur accusantium odit quos, repudiandae aut aspernatur?</p>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptas optio perspiciatis reprehenderit quod mollitia iste, soluta, illo, in deleniti eligendi consectetur provident voluptatem veritatis eum eius nulla ut omnis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eveniet amet voluptatem veniam voluptatum officia quisquam perspiciatis blanditiis, mollitia ratione qui nesciunt, sint deleniti, assumenda quasi quos vero doloribus! Fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, consectetur architecto omnis rem, ullam adipisci tenetur dolore perspiciatis officiis vitae voluptates atque laborum necessitatibus! Reiciendis aspernatur impedit reprehenderit dignissimos placeat? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda unde repellat dolorum eum voluptates ad illum recusandae, aperiam nihil et? Blanditiis, illo! In consectetur accusantium odit quos, repudiandae aut aspernatur?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptas optio perspiciatis reprehenderit quod
+        mollitia iste, soluta, illo, in deleniti eligendi consectetur provident voluptatem veritatis eum eius nulla ut
+        omnis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eveniet amet voluptatem veniam
+        voluptatum officia quisquam perspiciatis blanditiis, mollitia ratione qui nesciunt, sint deleniti, assumenda
+        quasi quos vero doloribus! Fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, consectetur
+        architecto omnis rem, ullam adipisci tenetur dolore perspiciatis officiis vitae voluptates atque laborum
+        necessitatibus! Reiciendis aspernatur impedit reprehenderit dignissimos placeat? Lorem ipsum dolor sit, amet
+        consectetur adipisicing elit. Assumenda unde repellat dolorum eum voluptates ad illum recusandae, aperiam nihil
+        et? Blanditiis, illo! In consectetur accusantium odit quos, repudiandae aut aspernatur?</p>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptas optio perspiciatis reprehenderit quod mollitia iste, soluta, illo, in deleniti eligendi consectetur provident voluptatem veritatis eum eius nulla ut omnis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eveniet amet voluptatem veniam voluptatum officia quisquam perspiciatis blanditiis, mollitia ratione qui nesciunt, sint deleniti, assumenda quasi quos vero doloribus! Fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, consectetur architecto omnis rem, ullam adipisci tenetur dolore perspiciatis officiis vitae voluptates atque laborum necessitatibus! Reiciendis aspernatur impedit reprehenderit dignissimos placeat? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda unde repellat dolorum eum voluptates ad illum recusandae, aperiam nihil et? Blanditiis, illo! In consectetur accusantium odit quos, repudiandae aut aspernatur?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptas optio perspiciatis reprehenderit quod
+        mollitia iste, soluta, illo, in deleniti eligendi consectetur provident voluptatem veritatis eum eius nulla ut
+        omnis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eveniet amet voluptatem veniam
+        voluptatum officia quisquam perspiciatis blanditiis, mollitia ratione qui nesciunt, sint deleniti, assumenda
+        quasi quos vero doloribus! Fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, consectetur
+        architecto omnis rem, ullam adipisci tenetur dolore perspiciatis officiis vitae voluptates atque laborum
+        necessitatibus! Reiciendis aspernatur impedit reprehenderit dignissimos placeat? Lorem ipsum dolor sit, amet
+        consectetur adipisicing elit. Assumenda unde repellat dolorum eum voluptates ad illum recusandae, aperiam nihil
+        et? Blanditiis, illo! In consectetur accusantium odit quos, repudiandae aut aspernatur?</p>
 </body>
+
 </html>
